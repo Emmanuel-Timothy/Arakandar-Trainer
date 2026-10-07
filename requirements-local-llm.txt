@@ -1,0 +1,7 @@
+# Optional local-only conversational model support.
+# Install a CUDA-compatible torch build separately when using an NVIDIA GPU.
+transformers>=4.45.0,<5
+torch>=2.4.0
+accelerate>=1.0.0
+# Optional supervised adaptation of the local model.
+peft>=0.13.0

@@ -1,0 +1,36 @@
+{
+  "source": "yfinance",
+  "fetched_at": "2026-09-20T16:32:52.481601+00:00",
+  "period": "max",
+  "interval": "1d",
+  "tickers": {
+    "BBCA.JK": {
+      "rows": 5366,
+      "first_date": "2004-06-08T00:00:00+00:00",
+      "last_date": "2026-09-18T00:00:00+00:00",
+      "file": "BBCA_JK_ohlcv.csv",
+      "dropped_invalid_rows": 128
+    },
+    "BBRI.JK": {
+      "rows": 5498,
+      "first_date": "2003-11-10T00:00:00+00:00",
+      "last_date": "2026-09-18T00:00:00+00:00",
+      "file": "BBRI_JK_ohlcv.csv",
+      "dropped_invalid_rows": 148
+    },
+    "BMRI.JK": {
+      "rows": 5581,
+      "first_date": "2003-07-14T00:00:00+00:00",
+      "last_date": "2026-09-18T00:00:00+00:00",
+      "file": "BMRI_JK_ohlcv.csv",
+      "dropped_invalid_rows": 150
+    },
+    "TLKM.JK": {
+      "rows": 5290,
+      "first_date": "2004-09-28T00:00:00+00:00",
+      "last_date": "2026-09-18T00:00:00+00:00",
+      "file": "TLKM_JK_ohlcv.csv",
+      "dropped_invalid_rows": 124
+    }
+  }
+}

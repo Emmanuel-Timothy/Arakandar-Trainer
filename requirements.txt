@@ -1,0 +1,28 @@
+# Core data/ML stack
+numpy>=1.26.0
+pandas>=2.2.0
+scikit-learn>=1.4.0
+
+# Preferred gradient boosting engine (production plan target).
+# If this fails to install (e.g. offline/restricted environment), trainer.py
+# automatically falls back to sklearn's HistGradientBoostingClassifier, so
+# the whole pipeline still runs with zero missing-dependency errors.
+lightgbm>=4.3.0
+
+# NLP tokenizer sentiment fallback / augmentation (optional, not required by
+# nlp_tokenizer.py's own lexicon, but useful for the full agent later)
+vaderSentiment>=3.3.2
+
+# Real-time RSS ingestion (Phase 2/5, not required for local training)
+feedparser>=6.0.11
+
+# Free historical & real-time market data (swap-in data source; the trainer
+# itself only needs CSVs with [date,open,high,low,close,volume])
+yfinance>=0.2.38
+
+pytest>=8.0.0
+streamlit>=1.36.0
+# Streamlit imports this middleware API; keep it compatible with current Streamlit.
+starlette>=0.47.0
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
